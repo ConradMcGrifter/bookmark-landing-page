@@ -1,0 +1,28 @@
+@mixin desktopSize {
+    @media only screen and (min-width:850px) {
+        @content
+    }
+};
+
+@mixin flexCenter($direction: column) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    direction: $direction;
+};
+
+$colors: (
+    primary-blue: hsl(231, 69%, 60%),
+    primary-red: hsl(0, 94%, 66%),
+
+    neutral-grayish-blue: hsl(229, 8%, 60%),
+    neutral-very-dark-blue: hsl(229, 31%, 21%),
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+@function rem($pixels, $context: 16) {
+    @return ($pixels / $context) * 1rem;
+}
