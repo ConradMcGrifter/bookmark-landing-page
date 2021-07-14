@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+.website--grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 100px 500px 700px 700px 700px 300px 50px;
+      grid-template-rows: 100px 500px 700px 700px 700px 300px 50px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
