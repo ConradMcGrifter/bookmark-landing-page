@@ -1,1 +1,1 @@
-console.log("ay")
+import * as navBar from "./navBar.js";

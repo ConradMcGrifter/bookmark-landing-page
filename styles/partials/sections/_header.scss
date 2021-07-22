@@ -1,0 +1,102 @@
+.header {
+    outline: solid red 1px;
+    @include flexCenter();
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $max-width;
+    margin: $margin;
+
+    // outline: solid green 1px;
+
+    @include mobileSize {
+        flex-wrap: wrap;
+    }
+
+    #nav__hamburger {
+        background: none;
+        border: none;
+        display: none;
+        position: relative;
+        z-index: 999;
+
+        .hamburger-img {
+            width: 25px;
+        }
+
+        @include mobileSize {
+            display: block;
+        }
+    }
+
+    &__links--wrap {
+        width: 100%;
+        display: flex;
+
+        @include mobileSize {
+            position: fixed;
+            background: hsla(229, 31%, 21%, 0.815);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .links__ul {
+            display: flex;
+            justify-content: flex-end;
+
+            width: 100%;
+            list-style: none;
+
+            @include mobileSize {
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 5em;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: color(neutral-very-dark-blue);
+                    font-size: 1.4rem;
+                    letter-spacing: 0.15em;
+
+                    @include mobileSize {
+                        color: white;
+                    }
+                }
+
+                .login-btn {
+                    padding: 0.75em 2em;
+                    background: color(primary-red);
+                    color: white;
+                    border-radius: 5px;
+                    box-shadow: $box-shadow;
+                }
+
+                + li {
+                    margin-left: 2em;
+
+                    @include mobileSize {
+                        margin-left: 0;
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    &__links--wrap.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
