@@ -70,6 +70,11 @@ body.active {
   }
 }
 
+.nav .nav__img {
+  position: relative;
+  z-index: 998;
+}
+
 .nav #nav__hamburger {
   background: none;
   border: none;
@@ -84,7 +89,9 @@ body.active {
 
 @media only screen and (max-width: 850px) {
   .nav #nav__hamburger {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -132,7 +139,7 @@ body.active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 5em;
+    margin-top: 6em;
   }
 }
 

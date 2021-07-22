@@ -17,6 +17,11 @@
         flex-wrap: wrap;
     }
 
+    .nav__img {
+        position: relative;
+        z-index: 998;
+    }
+
     #nav__hamburger {
         background: none;
         border: none;
@@ -29,7 +34,7 @@
         }
 
         @include mobileSize {
-            display: block;
+            display: flex;
         }
     }
 
@@ -59,7 +64,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 5em;
+                margin-top: 6em;
             }
 
             li {
