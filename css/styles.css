@@ -38,6 +38,10 @@ p {
   line-height: 1.6;
 }
 
+img {
+  display: block;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,97 +223,29 @@ p {
   opacity: 1;
 }
 
-.hero--grid {
-  display: -ms-grid;
-  display: grid;
-  max-width: 1350px;
-  width: 100%;
-  -ms-grid-columns: 0.25fr auto;
-      grid-template-columns: 0.25fr auto;
-      grid-template-areas: ". main";
-}
-
-@media only screen and (max-width: 1000px) {
-  .hero--grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "main";
-  }
-}
-
 .hero-section {
-  padding: 2em 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-  z-index: -1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2em 0;
 }
 
-@media only screen and (max-width: 1000px) {
-  .hero-section {
-    padding: 0;
-  }
+.hero-section .hero-grid--container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "info img";
 }
 
-.hero-section__background {
-  width: 35%;
-  height: 300px;
-  background: #5368df;
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  right: 0;
-  border-radius: 999px 0 0 999px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .hero-section__background {
-    display: none;
-  }
-}
-
-.hero-section--wrap {
-  max-width: 1300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 2em;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: main;
-}
-
-@media only screen and (max-width: 1000px) {
-  .hero-section--wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-left: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2em;
-  }
-}
-
-.hero-section--wrap .hero-info {
+.hero-section .hero-grid--container .hero-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,44 +253,52 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 500px;
-  width: 100%;
-  padding: 2em 0 0 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info;
+  margin-left: 2em;
 }
 
-@media only screen and (max-width: 1000px) {
-  .hero-section--wrap .hero-info {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    min-width: unset;
-  }
+.hero-section .hero-grid--container .hero-info .hero-info--wrap {
+  max-width: 600px;
+  margin-top: 3em;
 }
 
-.hero-section--wrap .hero-info__h1 {
-  font-size: clamp(3rem, 4vw, 4.5rem);
+.hero-section .hero-grid--container .hero-info .hero-info--wrap .hero-info__h1 {
+  font-size: 4.5rem;
   font-weight: 500;
-  margin-top: 1em;
-  max-width: 15ch;
+  max-width: 20ch;
 }
 
-@media only screen and (max-width: 1000px) {
-  .hero-section--wrap .hero-info__h1 {
-    margin-top: 0;
-  }
-}
-
-.hero-section--wrap .hero-info__p {
+.hero-section .hero-grid--container .hero-info .hero-info--wrap .hero-info__p {
   color: #9194a1;
   margin-top: 1em;
-  max-width: 45ch;
-  font-size: clamp(1.6rem, 1.5vw, 1.8rem);
 }
 
-.hero-section--wrap .hero-info__img {
-  max-width: 657px;
+.hero-section .hero-grid--container .hero-image--wrap {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  position: relative;
+  z-index: -1;
+}
+
+.hero-section .hero-grid--container .hero-image--wrap .hero-img {
   width: 100%;
-  height: auto;
+  max-width: 700px;
+}
+
+.hero-section .hero-grid--container .hero-image--wrap .hero-bg {
+  background: #5368df;
+  height: 65%;
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 999px 0 0 999px;
+  z-index: -1;
 }
 /*# sourceMappingURL=styles.css.map */

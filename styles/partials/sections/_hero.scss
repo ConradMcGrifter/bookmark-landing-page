@@ -1,0 +1,71 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2em 0;
+
+    .hero-grid--container {
+        // margin-left: $margin;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "info img";
+
+        .hero-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            // justify-content: center;
+            grid-area: info;
+
+            margin-left: $margin;
+
+            .hero-info--wrap {
+                // this makes it work
+                max-width: 600px;
+                // height: 100%;
+                margin-top: 3em;
+
+                .hero-info__h1 {
+                    font-size: 4.5rem;
+                    font-weight: 500;
+                    max-width: 20ch;
+                }
+
+                .hero-info__p {
+                    color: color(neutral-grayish-blue);
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        .hero-image--wrap {
+            grid-area: img;
+            // outline: solid yellow 4px;
+            position: relative;
+            z-index: -1;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+
+            .hero-img {
+                width: 100%;
+                max-width: 700px;
+                // margin-left: 1.5em;
+                // margin-right: 1em;
+            }
+
+            .hero-bg {
+                background: color(primary-blue);
+                height: 65%;
+                width: 75%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border-radius: 999px 0 0 999px;
+                z-index: -1;
+            }
+        }
+    }
+}
