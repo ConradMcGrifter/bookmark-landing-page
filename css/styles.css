@@ -69,7 +69,7 @@ p {
   margin: 2em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -93,7 +93,7 @@ p {
   width: 25px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav #nav__hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,7 +108,7 @@ p {
   display: flex;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap {
     position: fixed;
     background: rgba(37, 43, 70, 0.918);
@@ -136,7 +136,7 @@ p {
   list-style: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap .links__ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -151,7 +151,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap .links__ul li {
     padding: 1em 0;
     width: 100%;
@@ -167,7 +167,7 @@ p {
   letter-spacing: 0.15em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap .links__ul li a {
     color: white;
     font-size: 1.6rem;
@@ -184,7 +184,7 @@ p {
           box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap .links__ul li .login-btn {
     background: none;
     border: solid white 2px;
@@ -196,7 +196,7 @@ p {
   margin-left: 2em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap .links__ul li ~ li {
     margin-left: 0;
   }
@@ -206,7 +206,7 @@ p {
   display: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .nav__links--wrap .links__ul hr {
     display: block;
     width: 100%;
@@ -222,14 +222,23 @@ p {
 .hero--grid {
   display: -ms-grid;
   display: grid;
-  max-width: 1400px;
+  max-width: 1350px;
   width: 100%;
-  -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
+  -ms-grid-columns: 0.25fr auto;
+      grid-template-columns: 0.25fr auto;
       grid-template-areas: ". main";
 }
 
+@media only screen and (max-width: 1000px) {
+  .hero--grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "main";
+  }
+}
+
 .hero-section {
+  padding: 2em 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,9 +256,15 @@ p {
   z-index: -1;
 }
 
+@media only screen and (max-width: 1000px) {
+  .hero-section {
+    padding: 0;
+  }
+}
+
 .hero-section__background {
-  width: 600px;
-  height: 350px;
+  width: 35%;
+  height: 300px;
   background: #5368df;
   position: absolute;
   z-index: -1;
@@ -258,21 +273,39 @@ p {
   border-radius: 999px 0 0 999px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .hero-section__background {
+    display: none;
+  }
+}
+
 .hero-section--wrap {
   max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 2em;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: main;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .hero-section--wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em;
   }
 }
 
@@ -284,21 +317,43 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em 2em 2em 0;
+  min-width: 500px;
+  width: 100%;
+  padding: 2em 0 0 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-section--wrap .hero-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    min-width: unset;
+  }
 }
 
 .hero-section--wrap .hero-info__h1 {
-  font-size: 4.5rem;
+  font-size: clamp(3rem, 4vw, 4.5rem);
   font-weight: 500;
   margin-top: 1em;
+  max-width: 15ch;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-section--wrap .hero-info__h1 {
+    margin-top: 0;
+  }
 }
 
 .hero-section--wrap .hero-info__p {
   color: #9194a1;
   margin-top: 1em;
+  max-width: 45ch;
+  font-size: clamp(1.6rem, 1.5vw, 1.8rem);
 }
 
 .hero-section--wrap .hero-info__img {
+  max-width: 657px;
   width: 100%;
   height: auto;
 }
