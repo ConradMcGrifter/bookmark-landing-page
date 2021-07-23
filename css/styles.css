@@ -4,8 +4,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto 500px 700px 700px 700px 300px 50px;
-      grid-template-rows: auto 500px 700px 700px 700px 300px 50px;
+  -ms-grid-rows: auto auto 700px 700px 700px 300px 50px;
+      grid-template-rows: auto auto 700px 700px 700px 300px 50px;
 }
 
 html {
@@ -45,7 +45,10 @@ body.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .nav {
@@ -211,5 +214,70 @@ body.active {
 .nav__links--wrap.active {
   visibility: visible;
   opacity: 1;
+}
+
+.hero-section {
+  outline: solid red 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  z-index: -1;
+}
+
+.hero-section__background {
+  width: 600px;
+  height: 350px;
+  background: #5368df;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  border-radius: 999px 0 0 999px;
+}
+
+.hero-section--wrap {
+  outline: solid green 2px;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em;
+}
+
+@media only screen and (max-width: 850px) {
+  .hero-section--wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.hero-section--wrap .hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: solid brown 2px;
+}
+
+.hero-section--wrap .hero-info__img {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */

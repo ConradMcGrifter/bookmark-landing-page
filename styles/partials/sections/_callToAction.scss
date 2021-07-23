@@ -1,0 +1,41 @@
+.hero-section {
+    outline: solid red 1px;
+    @include flexCenter();
+    position: relative;
+    z-index: -1;
+
+    &__background {
+        width: 600px;
+        height: 350px;
+        background: color(primary-blue);
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        border-radius: 999px 0 0 999px;
+    }
+
+    &--wrap {
+        outline: solid green 2px;
+        max-width: 1200px;
+        display: flex;
+        // padding: 2em 0 0 0;
+        margin: $margin;
+
+        @include mobileSize {
+            flex-wrap: wrap;
+        }
+
+        .hero-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            outline: solid brown 2px;
+        }
+
+        .hero-info__img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
