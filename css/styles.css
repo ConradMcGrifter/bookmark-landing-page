@@ -73,7 +73,7 @@ img {
   margin: 2em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -97,7 +97,7 @@ img {
   width: 25px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav #nav__hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,7 +112,7 @@ img {
   display: flex;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap {
     position: fixed;
     background: rgba(37, 43, 70, 0.918);
@@ -140,7 +140,7 @@ img {
   list-style: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -155,7 +155,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul li {
     padding: 1em 0;
     width: 100%;
@@ -171,7 +171,7 @@ img {
   letter-spacing: 0.15em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul li a {
     color: white;
     font-size: 1.6rem;
@@ -188,7 +188,7 @@ img {
           box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul li .login-btn {
     background: none;
     border: solid white 2px;
@@ -200,7 +200,7 @@ img {
   margin-left: 2em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul li ~ li {
     margin-left: 0;
   }
@@ -210,7 +210,7 @@ img {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul hr {
     display: block;
     width: 100%;
@@ -245,6 +245,16 @@ img {
       grid-template-areas: "info img";
 }
 
+@media only screen and (max-width: 950px) {
+  .hero-section .hero-grid--container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "img" "info";
+  }
+}
+
 .hero-section .hero-grid--container .hero-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,13 +272,42 @@ img {
   margin-left: 2em;
 }
 
+@media only screen and (max-width: 950px) {
+  .hero-section .hero-grid--container .hero-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    margin: 0 2em;
+  }
+}
+
 .hero-section .hero-grid--container .hero-info .hero-info--wrap {
   max-width: 600px;
   margin-top: 3em;
 }
 
+@media only screen and (max-width: 950px) {
+  .hero-section .hero-grid--container .hero-info .hero-info--wrap {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .hero-section .hero-grid--container .hero-info .hero-info--wrap .hero-info__h1 {
-  font-size: 4.5rem;
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
   font-weight: 500;
   max-width: 20ch;
 }
@@ -276,6 +315,8 @@ img {
 .hero-section .hero-grid--container .hero-info .hero-info--wrap .hero-info__p {
   color: #9194a1;
   margin-top: 1em;
+  font-size: clamp(1.6rem, 3vw, 1.8rem);
+  max-width: 45ch;
 }
 
 .hero-section .hero-grid--container .hero-image--wrap {
@@ -284,6 +325,20 @@ img {
   grid-area: img;
   position: relative;
   z-index: -1;
+}
+
+@media only screen and (max-width: 950px) {
+  .hero-section .hero-grid--container .hero-image--wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .hero-section .hero-grid--container .hero-image--wrap .hero-img {
@@ -300,5 +355,41 @@ img {
   right: 0;
   border-radius: 999px 0 0 999px;
   z-index: -1;
+}
+
+.hero-info__buttons--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.hero-info__buttons--wrap a {
+  display: block;
+  text-decoration: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.6rem;
+}
+
+.hero-info__buttons--wrap .hero-button--chrome,
+.hero-info__buttons--wrap .hero-button--firefox {
+  padding: 0.75em 1em;
+  border-radius: 5px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+}
+
+.hero-info__buttons--wrap .hero-button--chrome {
+  background: #5368df;
+  color: white;
+}
+
+.hero-info__buttons--wrap .hero-button--firefox {
+  color: black;
+  background: white;
+  margin-left: 1em;
 }
 /*# sourceMappingURL=styles.css.map */
