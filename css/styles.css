@@ -373,6 +373,12 @@ img {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 950px) {
+  .hero-info__buttons--wrap a {
+    font-size: 1.4rem;
+  }
+}
+
 .hero-info__buttons--wrap .hero-button--chrome,
 .hero-info__buttons--wrap .hero-button--firefox {
   padding: 0.75em 1em;
