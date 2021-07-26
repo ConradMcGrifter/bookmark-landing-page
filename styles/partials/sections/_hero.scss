@@ -37,7 +37,7 @@
 
             .hero-info--wrap {
                 // this makes it work
-                max-width: 600px;
+                max-width: 550px;
                 // height: 100%;
                 margin-top: 3em;
                 @include mobileSize {
@@ -79,7 +79,7 @@
 
             .hero-img {
                 width: 100%;
-                max-width: 700px;
+                max-width: 650px;
                 // margin-left: 1.5em;
                 // margin-right: 1em;
             }
@@ -98,6 +98,7 @@
     }
 }
 
+// button styles
 .hero-info__buttons--wrap {
     display: flex;
     margin-top: 1em;

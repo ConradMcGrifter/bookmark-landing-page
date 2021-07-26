@@ -25,6 +25,9 @@ body {
 
 p {
     line-height: 1.6;
+    color: color(neutral-grayish-blue);
+    margin-top: 1em;
+    font-size: clamp(1.6rem, 3vw, 1.8rem);
 }
 
 img {
