@@ -125,11 +125,27 @@
     .hero-button--chrome {
         background: color(primary-blue);
         color: white;
+        transition: box-shadow 0.2s;
+
+        &:hover {
+            background: white;
+            color: color(primary-blue);
+            outline: solid color(primary-blue) 0.15em;
+            box-shadow: none;
+        }
     }
 
     .hero-button--firefox {
         color: black;
-        background: white;
+        background: rgb(248, 248, 248);
         margin-left: 1em;
+        transition: box-shadow 0.2s;
+
+        &:hover {
+            background: white;
+            color: black;
+            outline: solid black 0.15em;
+            box-shadow: none;
+        }
     }
 }

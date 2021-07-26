@@ -188,6 +188,10 @@ img {
   letter-spacing: 0.15em;
 }
 
+.nav__links--wrap .links__ul li a:hover {
+  color: #fa5757;
+}
+
 @media only screen and (max-width: 950px) {
   .nav__links--wrap .links__ul li a {
     color: white;
@@ -200,6 +204,18 @@ img {
   padding: 0.75em 2em;
   background: #fa5757;
   color: white;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.nav__links--wrap .links__ul li .login-btn:hover {
+  background: white;
+  color: #fa5757;
+  outline: solid #fa5757 0.15em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media only screen and (max-width: 950px) {
@@ -395,12 +411,36 @@ img {
 .hero-info__buttons--wrap .hero-button--chrome {
   background: #5368df;
   color: white;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.hero-info__buttons--wrap .hero-button--chrome:hover {
+  background: white;
+  color: #5368df;
+  outline: solid #5368df 0.15em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .hero-info__buttons--wrap .hero-button--firefox {
   color: black;
-  background: white;
+  background: #f8f8f8;
   margin-left: 1em;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.hero-info__buttons--wrap .hero-button--firefox:hover {
+  background: white;
+  color: black;
+  outline: solid black 0.15em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .features-section {

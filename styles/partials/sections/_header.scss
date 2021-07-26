@@ -87,6 +87,10 @@
                     font-size: 1.4rem;
                     letter-spacing: 0.15em;
 
+                    &:hover {
+                        color: color(primary-red);
+                    }
+
                     @include mobileSize {
                         color: white;
                         font-size: 1.6rem;
@@ -98,6 +102,14 @@
                     padding: 0.75em 2em;
                     background: color(primary-red);
                     color: white;
+                    transition: box-shadow 0.2s;
+
+                    &:hover {
+                        background: white;
+                        color: color(primary-red);
+                        outline: solid color(primary-red) 0.15em;
+                        box-shadow: none;
+                    }
 
                     @include mobileSize {
                         background: none;
