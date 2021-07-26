@@ -442,6 +442,7 @@ img {
 
 .features-header__h2 {
   text-align: center;
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
 }
 
 .tabs--wrap {
@@ -459,6 +460,19 @@ img {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 2em;
+}
+
+.tabs--wrap hr {
+  display: none;
+  width: 100%;
+  border: solid #dfdfdf 1px;
+  outline: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .tabs--wrap hr {
+    display: block;
+  }
 }
 
 .tabs--wrap .tabs__ul {
@@ -532,8 +546,10 @@ img {
 
 @media only screen and (max-width: 950px) {
   .tabs--wrap .tabs__ul .tabs__li .tab-links.active::before {
-    width: 50%;
-    left: 25%;
+    width: 40%;
+    left: 30%;
+    bottom: -0.12em;
+    height: 5px;
   }
 }
 
@@ -551,8 +567,11 @@ img {
 
 @media only screen and (max-width: 950px) {
   .tabs--wrap .tabs__ul .tabs__li .tab-links::before {
-    width: 50%;
-    left: 25%;
+    width: 40%;
+    left: 30%;
+    bottom: -0.12em;
+    background: none;
+    height: 5px;
   }
 }
 

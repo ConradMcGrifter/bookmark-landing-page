@@ -21,6 +21,7 @@
 
     &__h2 {
         text-align: center;
+        font-size: clamp(2.6rem, 5vw, 3.2rem);
     }
 }
 
@@ -28,6 +29,17 @@
     // outline: solid red 1px;
     @include flexCenter();
     margin-top: 2em;
+
+    hr {
+        display: none;
+        width: 100%;
+        border: solid rgb(223, 223, 223) 1px;
+        outline: none;
+
+        @include mobileSize {
+            display: block;
+        }
+    }
 
     .tabs__ul {
         display: flex;
@@ -86,8 +98,10 @@
                     position: absolute;
 
                     @include mobileSize {
-                        width: 50%;
-                        left: 25%;
+                        width: 40%;
+                        left: 30%;
+                        bottom: -0.12em;
+                        height: 5px;
                     }
                 }
 
@@ -102,8 +116,11 @@
                     transition: background 0.25s;
 
                     @include mobileSize {
-                        width: 50%;
-                        left: 25%;
+                        width: 40%;
+                        left: 30%;
+                        bottom: -0.12em;
+                        background: none;
+                        height: 5px;
                     }
                 }
             }
