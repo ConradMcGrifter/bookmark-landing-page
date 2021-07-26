@@ -14,6 +14,7 @@ const toggleTabs = (img, text) => {
         images[i].classList.remove("active");
         info[i].classList.remove("active");
     }
+
     document.getElementById(img).classList.add("active");
     document.getElementById(text).classList.add("active");
 };
@@ -48,7 +49,6 @@ function targetTab(tab) {
 
 toggleTabs("simple-img", "simple-info");
 
-// targetTab();
 document.querySelector(".default").classList.add("active");
 
 tab1.addEventListener("click", () => {
@@ -65,4 +65,3 @@ tab3.addEventListener("click", () => {
     targetTab("easy--btn");
     toggleTabs("easy-img", "easy-info");
 });
-// tab2.addEventListener("click", toggleTabs("speedy-img", "speedy-info"));

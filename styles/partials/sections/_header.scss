@@ -32,6 +32,11 @@
             width: 25px;
         }
 
+        .x-img {
+            width: 25px;
+            display: none;
+        }
+
         @include mobileSize {
             display: flex;
         }

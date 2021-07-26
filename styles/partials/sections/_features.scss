@@ -132,14 +132,16 @@
             max-height: 346px;
             margin-left: $margin;
             margin-right: 1em;
-            // max-width: 536px;
-
             display: none;
-            // padding: 3em 0 3em 0;
 
             &.active {
                 display: block;
             }
+        }
+
+        // this makes the first slide img show up even if javaScript is disabled
+        #simple-img.active {
+            display: block;
         }
 
         .features__bg {
@@ -152,24 +154,21 @@
             background: color(primary-blue);
             z-index: -1;
         }
-
-        .speedy,
-        .easy {
-            display: none;
-        }
     }
 
     .features__info {
-        // padding: 4em 2em 4em 6em;
         @include flexCenter(column);
-        // align-items: flex-start;
         max-width: 600px;
         margin-right: $margin;
+
+        // this makes the first slide info show up even if javaScript is disabled
+        #simple-info.active {
+            display: block;
+        }
 
         .info--wrap {
             display: none;
             margin: 0 1em;
-            // margin-left: 4em;
 
             &.active {
                 display: block;
