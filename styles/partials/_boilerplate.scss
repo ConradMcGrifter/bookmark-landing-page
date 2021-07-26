@@ -33,3 +33,12 @@ p {
 img {
     display: block;
 }
+
+// these are the common styles for the buttons in the website
+.button {
+    padding: 0.75em 1em;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    box-shadow: $box-shadow;
+}

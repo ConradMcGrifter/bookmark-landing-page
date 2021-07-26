@@ -84,6 +84,11 @@
                     bottom: -0.25em;
                     left: 0px;
                     position: absolute;
+
+                    @include mobileSize {
+                        width: 50%;
+                        left: 25%;
+                    }
                 }
 
                 &::before {
@@ -95,6 +100,11 @@
                     left: 0;
                     position: absolute;
                     transition: background 0.25s;
+
+                    @include mobileSize {
+                        width: 50%;
+                        left: 25%;
+                    }
                 }
             }
         }
@@ -135,11 +145,13 @@
 
             @include mobileSize {
                 object-position: unset;
+                max-height: 320px;
                 margin: 0 $margin;
             }
 
             @media only screen and (max-width: 450px) {
                 max-height: 207px;
+                margin: 0;
             }
 
             &.active {
@@ -198,12 +210,11 @@
             }
 
             .info__h2 {
-                font-size: 3.2rem;
+                font-size: clamp(2.6rem, 5vw, 3.2rem);
             }
 
             .features__btn {
                 margin: 1em 0 0 0;
-                padding: 0.5em;
                 text-decoration: none;
                 display: block;
                 background: color(primary-blue);

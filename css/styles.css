@@ -45,6 +45,15 @@ img {
   display: block;
 }
 
+.button {
+  padding: 0.75em 1em;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,9 +200,6 @@ img {
   padding: 0.75em 2em;
   background: #fa5757;
   color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
-          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
 }
 
 @media only screen and (max-width: 950px) {
@@ -387,15 +393,6 @@ img {
   }
 }
 
-.hero-info__buttons--wrap .hero-button--chrome,
-.hero-info__buttons--wrap .hero-button--firefox {
-  padding: 0.75em 1em;
-  border-radius: 5px;
-  font-weight: 500;
-  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
-          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
-}
-
 .hero-info__buttons--wrap .hero-button--chrome {
   background: #5368df;
   color: white;
@@ -533,6 +530,13 @@ img {
   position: absolute;
 }
 
+@media only screen and (max-width: 950px) {
+  .tabs--wrap .tabs__ul .tabs__li .tab-links.active::before {
+    width: 50%;
+    left: 25%;
+  }
+}
+
 .tabs--wrap .tabs__ul .tabs__li .tab-links::before {
   content: "";
   height: 3px;
@@ -543,6 +547,13 @@ img {
   position: absolute;
   -webkit-transition: background 0.25s;
   transition: background 0.25s;
+}
+
+@media only screen and (max-width: 950px) {
+  .tabs--wrap .tabs__ul .tabs__li .tab-links::before {
+    width: 50%;
+    left: 25%;
+  }
 }
 
 .features--grid {
@@ -596,6 +607,7 @@ img {
   .features--grid .features__images .feature-img {
     -o-object-position: unset;
        object-position: unset;
+    max-height: 320px;
     margin: 0 2em;
   }
 }
@@ -603,6 +615,7 @@ img {
 @media only screen and (max-width: 450px) {
   .features--grid .features__images .feature-img {
     max-height: 207px;
+    margin: 0;
   }
 }
 
@@ -676,12 +689,11 @@ img {
 }
 
 .features--grid .features__info .info--wrap .info__h2 {
-  font-size: 3.2rem;
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
 }
 
 .features--grid .features__info .info--wrap .features__btn {
   margin: 1em 0 0 0;
-  padding: 0.5em;
   text-decoration: none;
   display: block;
   background: #5368df;
