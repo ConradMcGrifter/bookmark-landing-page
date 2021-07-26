@@ -142,6 +142,7 @@
             margin-left: $margin;
             margin-right: 1em;
             display: none;
+            animation: fadeIn 0.25s ease-in-out;
 
             @include mobileSize {
                 object-position: unset;
@@ -200,6 +201,7 @@
         .info--wrap {
             display: none;
             margin: 0 1em;
+            animation: fadeIn 0.25s ease-in-out;
 
             &.active {
                 display: block;

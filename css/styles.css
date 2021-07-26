@@ -601,6 +601,8 @@ img {
   margin-left: 2em;
   margin-right: 1em;
   display: none;
+  -webkit-animation: fadeIn 0.25s ease-in-out;
+          animation: fadeIn 0.25s ease-in-out;
 }
 
 @media only screen and (max-width: 950px) {
@@ -678,6 +680,8 @@ img {
 .features--grid .features__info .info--wrap {
   display: none;
   margin: 0 1em;
+  -webkit-animation: fadeIn 0.25s ease-in-out;
+          animation: fadeIn 0.25s ease-in-out;
 }
 
 .features--grid .features__info .info--wrap.active {
@@ -706,6 +710,24 @@ img {
 @media only screen and (max-width: 950px) {
   .features--grid .features__info .info--wrap .features__btn {
     margin: 1em auto 0 auto;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=styles.css.map */
