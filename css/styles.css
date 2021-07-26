@@ -38,7 +38,7 @@ p {
   line-height: 1.6;
   color: #9194a1;
   margin-top: 1em;
-  font-size: clamp(1.6rem, 3vw, 1.8rem);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
 }
 
 img {
@@ -329,7 +329,6 @@ img {
 .hero-section .hero-grid--container .hero-info .hero-info--wrap .hero-info__p {
   color: #9194a1;
   margin-top: 1em;
-  font-size: clamp(1.6rem, 3vw, 1.8rem);
   max-width: 45ch;
 }
 
