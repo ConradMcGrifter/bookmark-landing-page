@@ -7,6 +7,7 @@
     // outline: solid green 2px;
     display: flex;
     flex-direction: column;
+    margin: 0 $margin;
 
     .title--wrap {
         // outline: solid yellow 2px;
@@ -37,6 +38,9 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        @include mobileSize {
+            flex-wrap: wrap;
+        }
 
         .tabs__li {
             width: 100%;
@@ -57,16 +61,11 @@
                 padding: 1em;
                 cursor: pointer;
                 transition: border 0.25s;
-                // outline: solid 1px red;
+                color: color(neutral-grayish-blue);
 
-                // &.inactive {
-                //     border-bottom: solid rgb(224, 224, 224) 2px;
-                //     color: color(neutral-grayish-blue);
-                // }
-                // &.active {
-                //     border-bottom: solid red 2px;
-                //     color: black;
-                // }
+                &.active {
+                    color: black;
+                }
 
                 &:hover {
                     color: color(primary-red);
@@ -76,16 +75,6 @@
                     color: color(primary-red);
                     transition: color 0.25s;
                 }
-
-                // &:focus::before {
-                //     content: "";
-                //     height: 3px;
-                //     width: 100%;
-                //     background: color(primary-red);
-                //     bottom: -0.25em;
-                //     left: 0;
-                //     position: absolute;
-                // }
 
                 &.active::before {
                     content: "";
@@ -118,12 +107,22 @@
     grid-template-columns: 50% 50%;
     // grid-template-rows: minmax(1fr, 600px);
 
+    @include mobileSize {
+        grid-template-columns: 1fr;
+    }
+
     .features__images {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 2em 0em 4em 0em;
         position: relative;
+
+        @include mobileSize {
+            padding: 2em 0;
+            // justify-content: center;
+            // align-items: center;
+        }
 
         .feature-img {
             object-fit: contain;
@@ -133,6 +132,15 @@
             margin-left: $margin;
             margin-right: 1em;
             display: none;
+
+            @include mobileSize {
+                object-position: unset;
+                margin: 0 $margin;
+            }
+
+            @media only screen and (max-width: 450px) {
+                max-height: 207px;
+            }
 
             &.active {
                 display: block;
@@ -153,6 +161,10 @@
             border-radius: 0 999px 999px 0;
             background: color(primary-blue);
             z-index: -1;
+
+            @include mobileSize {
+                width: 75%;
+            }
         }
     }
 
@@ -160,6 +172,13 @@
         @include flexCenter(column);
         max-width: 600px;
         margin-right: $margin;
+
+        @include mobileSize {
+            margin-right: 0;
+            margin-top: $margin;
+            max-width: unset;
+            text-align: center;
+        }
 
         // this makes the first slide info show up even if javaScript is disabled
         #simple-info.active {
@@ -183,13 +202,17 @@
             }
 
             .features__btn {
-                margin-top: 1em;
+                margin: 1em 0 0 0;
                 padding: 0.5em;
                 text-decoration: none;
                 display: block;
                 background: color(primary-blue);
                 width: max-content;
                 color: white;
+
+                @include mobileSize {
+                    margin: 1em auto 0 auto;
+                }
             }
         }
     }
