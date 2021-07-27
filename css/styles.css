@@ -669,12 +669,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 1em 0 2em;
   position: relative;
-  padding: 2em;
 }
 
 @media only screen and (max-width: 950px) {
   .features--grid .features__images {
+    padding: 0em 2em;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
