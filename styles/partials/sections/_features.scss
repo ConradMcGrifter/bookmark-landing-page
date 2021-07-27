@@ -129,21 +129,33 @@
 }
 
 .features--grid {
-    margin-top: $margin;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 500px;
+    grid-template-rows: 450px;
     // grid-template-rows: minmax(1fr, 600px);
 
     @include mobileSize {
         grid-template-columns: 1fr;
     }
 
-    @media only screen and (max-width: 1200px) {
-        grid-template-rows: 450px;
+    // @media only screen and (max-width: 1200px) {
+    //     grid-template-rows: 450px;
+    // }
+
+    @media only screen and (max-width: 550px) {
+        grid-template-rows: 425px;
     }
 
     @media only screen and (max-width: 450px) {
+        grid-template-rows: 375px;
+    }
+
+    @media only screen and (max-width: 414px) {
+        grid-template-rows: 350px;
+    }
+
+    @media only screen and (max-width: 375px) {
         grid-template-rows: 300px;
     }
 
@@ -153,9 +165,10 @@
         align-items: center;
         // padding: 2em 0em 4em 0em;
         position: relative;
+        // margin-top: 1em;
 
         @include mobileSize {
-            padding: 2em 0;
+            // padding: 2em 0;
             justify-content: center;
             // align-items: center;
         }
@@ -173,7 +186,7 @@
 
             @include mobileSize {
                 object-position: unset;
-                max-height: 320px;
+                // max-height: 320px;
                 margin: 0 $margin;
             }
 
@@ -196,13 +209,22 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 70%;
-            width: 85%;
+            height: 72%;
+            width: 88%;
             border-radius: 0 999px 999px 0;
             background: color(primary-blue);
             z-index: -1;
 
-            @include mobileSize {
+            @media only screen and (max-width: 1200px) {
+                width: 85%;
+            }
+
+            @media only screen and (max-width: 950px) {
+                width: 70%;
+                height: 68%;
+            }
+
+            @media only screen and (max-width: 700px) {
                 width: 75%;
             }
 
@@ -210,9 +232,9 @@
             //     height: 60%;
             // }
 
-            @media only screen and (max-width: 500px) {
-                height: 70%;
-            }
+            // @media only screen and (max-width: 500px) {
+            //     height: 70%;
+            // }
         }
     }
 

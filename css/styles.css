@@ -620,8 +620,8 @@ img {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 500px;
-      grid-template-rows: 500px;
+  -ms-grid-rows: 450px;
+      grid-template-rows: 450px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -631,14 +631,28 @@ img {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 550px) {
   .features--grid {
-    -ms-grid-rows: 450px;
-        grid-template-rows: 450px;
+    -ms-grid-rows: 425px;
+        grid-template-rows: 425px;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  .features--grid {
+    -ms-grid-rows: 375px;
+        grid-template-rows: 375px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .features--grid {
+    -ms-grid-rows: 350px;
+        grid-template-rows: 350px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .features--grid {
     -ms-grid-rows: 300px;
         grid-template-rows: 300px;
@@ -660,7 +674,6 @@ img {
 
 @media only screen and (max-width: 950px) {
   .features--grid .features__images {
-    padding: 2em 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -686,7 +699,6 @@ img {
   .features--grid .features__images .feature-img {
     -o-object-position: unset;
        object-position: unset;
-    max-height: 320px;
     margin: 0 2em;
   }
 }
@@ -703,22 +715,29 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 70%;
-  width: 85%;
+  height: 72%;
+  width: 88%;
   border-radius: 0 999px 999px 0;
   background: #5368df;
   z-index: -1;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
   .features--grid .features__images .features__bg {
-    width: 75%;
+    width: 85%;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
   .features--grid .features__images .features__bg {
-    height: 70%;
+    width: 70%;
+    height: 68%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .features--grid .features__images .features__bg {
+    width: 75%;
   }
 }
 
