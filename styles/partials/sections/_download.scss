@@ -1,6 +1,11 @@
 .download-section {
     margin: 7em 0;
+
+    @include mobileSize {
+        margin: 3em 0;
+    }
     &__header {
+        margin: 0 $margin;
         // background: rgba(255, 0, 0, 0.404);
         text-align: center;
         @include flexCenter(column);
@@ -14,11 +19,23 @@
         // background: rgba(0, 128, 0, 0.281);
         display: flex;
         justify-content: center;
-        height: 375px;
+        height: 475px;
         margin-top: 3em;
+        padding: 2em;
+
+        @include mobileSize {
+            flex-direction: column;
+            height: unset;
+            margin-top: 1em;
+        }
 
         .card-container {
             // outline: solid black 2px;
+
+            @include mobileSize {
+                display: grid;
+                place-items: center;
+            }
 
             .card {
                 background: white;
@@ -26,8 +43,14 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                padding: 1.25em 1em;
+                padding: 2em 1em 1em 1em;
                 border-radius: 10px;
+                position: relative;
+
+                @include mobileSize {
+                    max-width: 400px;
+                    width: 100%;
+                }
 
                 // + .card {
                 //     margin-left: 2em;
@@ -35,7 +58,7 @@
 
                 &__img {
                     width: 100px;
-                    height: 100px;
+                    // height: 100px;
                 }
 
                 &__info--wrap {
@@ -56,12 +79,31 @@
                     text-decoration: none;
                     background: color(primary-blue);
                     color: white;
-                    margin-top: 3em;
+                    margin-top: 4em;
+                    width: 100%;
+                    text-align: center;
+
+                    &:hover {
+                        background: white;
+                        color: color(primary-blue);
+                        outline: solid color(primary-blue) 0.15em;
+                        box-shadow: none;
+                    }
+                }
+
+                &__bg {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 4.5em;
                 }
             }
 
             .margin {
                 margin: 0 1.5em;
+
+                @include mobileSize {
+                    margin: 1.5em 0;
+                }
             }
         }
 
@@ -73,6 +115,10 @@
         .opera-container {
             display: grid;
             place-items: end;
+
+            @include mobileSize {
+                place-items: center;
+            }
         }
     }
 }

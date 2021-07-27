@@ -793,7 +793,14 @@ img {
   margin: 7em 0;
 }
 
+@media only screen and (max-width: 950px) {
+  .download-section {
+    margin: 3em 0;
+  }
+}
+
 .download-section__header {
+  margin: 0 2em;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -821,8 +828,28 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 375px;
+  height: 475px;
   margin-top: 3em;
+  padding: 2em;
+}
+
+@media only screen and (max-width: 950px) {
+  .download-section__card--wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .download-section__card--wrap .card-container {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
 }
 
 .download-section__card--wrap .card-container .card {
@@ -839,13 +866,20 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.25em 1em;
+  padding: 2em 1em 1em 1em;
   border-radius: 10px;
+  position: relative;
+}
+
+@media only screen and (max-width: 950px) {
+  .download-section__card--wrap .card-container .card {
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
 .download-section__card--wrap .card-container .card__img {
   width: 100px;
-  height: 100px;
 }
 
 .download-section__card--wrap .card-container .card__info--wrap {
@@ -867,11 +901,33 @@ img {
   text-decoration: none;
   background: #5368df;
   color: white;
-  margin-top: 3em;
+  margin-top: 4em;
+  width: 100%;
+  text-align: center;
+}
+
+.download-section__card--wrap .card-container .card__button:hover {
+  background: white;
+  color: #5368df;
+  outline: solid #5368df 0.15em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.download-section__card--wrap .card-container .card__bg {
+  width: 100%;
+  position: absolute;
+  bottom: 4.5em;
 }
 
 .download-section__card--wrap .card-container .margin {
   margin: 0 1.5em;
+}
+
+@media only screen and (max-width: 950px) {
+  .download-section__card--wrap .card-container .margin {
+    margin: 1.5em 0;
+  }
 }
 
 .download-section__card--wrap .firefox-container {
@@ -884,5 +940,11 @@ img {
   display: -ms-grid;
   display: grid;
   place-items: end;
+}
+
+@media only screen and (max-width: 950px) {
+  .download-section__card--wrap .opera-container {
+    place-items: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
