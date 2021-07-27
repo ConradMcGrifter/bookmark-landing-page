@@ -481,7 +481,7 @@ img {
 
 .features-header__h2 {
   text-align: center;
-  font-size: clamp(2.6rem, 5vw, 3.2rem);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
 }
 
 .tabs--wrap {
@@ -751,7 +751,7 @@ img {
 }
 
 .features--grid .features__info .info--wrap .info__h2 {
-  font-size: clamp(2.6rem, 5vw, 3.2rem);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
 }
 
 .features--grid .features__info .info--wrap .features__btn {
@@ -822,7 +822,7 @@ img {
 }
 
 .download-section__h2 {
-  font-size: clamp(2.6rem, 5vw, 3.2rem);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
 }
 
 .download-section__card--wrap {
