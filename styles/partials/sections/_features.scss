@@ -132,22 +132,31 @@
     margin-top: $margin;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 500px;
     // grid-template-rows: minmax(1fr, 600px);
 
     @include mobileSize {
         grid-template-columns: 1fr;
     }
 
+    @media only screen and (max-width: 1200px) {
+        grid-template-rows: 450px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        grid-template-rows: 300px;
+    }
+
     .features__images {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 2em 0em 4em 0em;
+        // padding: 2em 0em 4em 0em;
         position: relative;
 
         @include mobileSize {
             padding: 2em 0;
-            // justify-content: center;
+            justify-content: center;
             // align-items: center;
         }
 
@@ -155,7 +164,8 @@
             object-fit: contain;
             object-position: right;
             width: 100%;
-            max-height: 346px;
+            max-height: 400px;
+            max-width: 535px;
             margin-left: $margin;
             margin-right: 1em;
             display: none;
@@ -167,10 +177,10 @@
                 margin: 0 $margin;
             }
 
-            @media only screen and (max-width: 450px) {
-                max-height: 207px;
-                margin: 0;
-            }
+            // @media only screen and (max-width: 450px) {
+            //     max-height: 207px;
+            //     margin: 0;
+            // }
 
             &.active {
                 display: block;
@@ -187,13 +197,21 @@
             bottom: 0;
             left: 0;
             height: 70%;
-            width: 90%;
+            width: 85%;
             border-radius: 0 999px 999px 0;
             background: color(primary-blue);
             z-index: -1;
 
             @include mobileSize {
                 width: 75%;
+            }
+
+            // @media only screen and (max-width: 1200px) {
+            //     height: 60%;
+            // }
+
+            @media only screen and (max-width: 500px) {
+                height: 70%;
             }
         }
     }
