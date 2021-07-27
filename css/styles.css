@@ -670,6 +670,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 2em;
 }
 
 @media only screen and (max-width: 950px) {
@@ -688,8 +689,6 @@ img {
   width: 100%;
   max-height: 400px;
   max-width: 535px;
-  margin-left: 2em;
-  margin-right: 1em;
   display: none;
   -webkit-animation: fadeIn 0.25s ease-in-out;
           animation: fadeIn 0.25s ease-in-out;
@@ -699,7 +698,6 @@ img {
   .features--grid .features__images .feature-img {
     -o-object-position: unset;
        object-position: unset;
-    margin: 0 2em;
   }
 }
 
