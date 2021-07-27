@@ -15,6 +15,10 @@
         max-width: 47ch;
     }
 
+    &__h2 {
+        font-size: clamp(2.6rem, 5vw, 3.2rem);
+    }
+
     &__card--wrap {
         // background: rgba(0, 128, 0, 0.281);
         display: flex;
@@ -43,7 +47,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                padding: 2em 1em 1em 1em;
+                padding: 1.5em;
                 border-radius: 10px;
                 position: relative;
 
@@ -94,7 +98,7 @@
                 &__bg {
                     width: 100%;
                     position: absolute;
-                    bottom: 4.5em;
+                    bottom: 5.25em;
                 }
             }
 

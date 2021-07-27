@@ -50,8 +50,8 @@ img {
   border-radius: 5px;
   font-weight: 500;
   font-size: 1.6rem;
-  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
-          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+  -webkit-box-shadow: 0 5px 10px rgba(10, 10, 10, 0.116);
+          box-shadow: 0 5px 10px rgba(10, 10, 10, 0.116);
 }
 
 .header {
@@ -821,6 +821,10 @@ img {
   max-width: 47ch;
 }
 
+.download-section__h2 {
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
+}
+
 .download-section__card--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,8 +858,8 @@ img {
 
 .download-section__card--wrap .card-container .card {
   background: white;
-  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
-          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+  -webkit-box-shadow: 0 5px 10px rgba(10, 10, 10, 0.116);
+          box-shadow: 0 5px 10px rgba(10, 10, 10, 0.116);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,7 +870,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em 1em 1em 1em;
+  padding: 1.5em;
   border-radius: 10px;
   position: relative;
 }
@@ -917,7 +921,7 @@ img {
 .download-section__card--wrap .card-container .card__bg {
   width: 100%;
   position: absolute;
-  bottom: 4.5em;
+  bottom: 5.25em;
 }
 
 .download-section__card--wrap .card-container .margin {
