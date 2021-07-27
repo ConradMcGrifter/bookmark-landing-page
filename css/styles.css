@@ -4,8 +4,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto 700px 700px 300px 50px;
-      grid-template-rows: auto auto auto 700px 700px 300px 50px;
+  -ms-grid-rows: auto auto auto auto 700px 300px 50px;
+      grid-template-rows: auto auto auto auto 700px 300px 50px;
 }
 
 html {
@@ -787,5 +787,102 @@ img {
   to {
     opacity: 1;
   }
+}
+
+.download-section {
+  margin: 7em 0;
+}
+
+.download-section__header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.download-section__p {
+  max-width: 47ch;
+}
+
+.download-section__card--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 375px;
+  margin-top: 3em;
+}
+
+.download-section__card--wrap .card-container .card {
+  background: white;
+  -webkit-box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+          box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.25em 1em;
+  border-radius: 10px;
+}
+
+.download-section__card--wrap .card-container .card__img {
+  width: 100px;
+  height: 100px;
+}
+
+.download-section__card--wrap .card-container .card__info--wrap {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.download-section__card--wrap .card-container .card__info--wrap .info__p {
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+}
+
+.download-section__card--wrap .card-container .card__info--wrap .info__h3 {
+  font-size: 2rem;
+}
+
+.download-section__card--wrap .card-container .card__button {
+  margin-top: 1em;
+  text-decoration: none;
+  background: #5368df;
+  color: white;
+  margin-top: 3em;
+}
+
+.download-section__card--wrap .card-container .margin {
+  margin: 0 1.5em;
+}
+
+.download-section__card--wrap .firefox-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.download-section__card--wrap .opera-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: end;
 }
 /*# sourceMappingURL=styles.css.map */

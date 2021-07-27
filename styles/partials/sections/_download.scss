@@ -1,0 +1,78 @@
+.download-section {
+    margin: 7em 0;
+    &__header {
+        // background: rgba(255, 0, 0, 0.404);
+        text-align: center;
+        @include flexCenter(column);
+    }
+
+    &__p {
+        max-width: 47ch;
+    }
+
+    &__card--wrap {
+        // background: rgba(0, 128, 0, 0.281);
+        display: flex;
+        justify-content: center;
+        height: 375px;
+        margin-top: 3em;
+
+        .card-container {
+            // outline: solid black 2px;
+
+            .card {
+                background: white;
+                box-shadow: $box-shadow;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 1.25em 1em;
+                border-radius: 10px;
+
+                // + .card {
+                //     margin-left: 2em;
+                // }
+
+                &__img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &__info--wrap {
+                    text-align: center;
+                    margin-top: 1em;
+                    .info__p {
+                        margin-top: 0.5em;
+                        font-size: 1.5rem;
+                    }
+
+                    .info__h3 {
+                        font-size: 2rem;
+                    }
+                }
+
+                &__button {
+                    margin-top: 1em;
+                    text-decoration: none;
+                    background: color(primary-blue);
+                    color: white;
+                    margin-top: 3em;
+                }
+            }
+
+            .margin {
+                margin: 0 1.5em;
+            }
+        }
+
+        .firefox-container {
+            display: grid;
+            place-items: center;
+        }
+
+        .opera-container {
+            display: grid;
+            place-items: end;
+        }
+    }
+}
