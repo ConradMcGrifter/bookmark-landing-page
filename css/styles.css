@@ -1034,7 +1034,8 @@ img {
 }
 
 .faq-section--wrap .accordion--wrap hr {
-  color: rgba(206, 206, 206, 0.377);
+  height: 1px;
+  border: solid 1px #ececec;
 }
 
 .faq-section--wrap .accordion--wrap .accordion {
@@ -1060,6 +1061,12 @@ img {
   transition: -webkit-transform 0.15s ease-out;
   transition: transform 0.15s ease-out;
   transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
+}
+
+@media only screen and (max-width: 950px) {
+  .faq-section--wrap .accordion--wrap .accordion::after {
+    right: 0;
+  }
 }
 
 .faq-section--wrap .accordion--wrap .accordion.active::after {

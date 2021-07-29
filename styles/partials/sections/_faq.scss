@@ -1,7 +1,7 @@
 .faq-section--wrap {
     // background: rgba(240, 128, 128, 0.432);
     // outline: solid red 2px;
-    padding: 2em;
+    padding: $margin;
     @include flexCenter(column);
 
     .faq-section-header--wrap {
@@ -23,7 +23,8 @@
         flex-direction: column;
 
         hr {
-            color: rgba(206, 206, 206, 0.377);
+            height: 1px;
+            border: solid 1px rgb(236, 236, 236);
         }
 
         .accordion {
@@ -44,7 +45,12 @@
                 content: url("../images/icon-arrow.svg");
                 position: absolute;
                 right: 1rem;
+
                 transition: transform 0.15s ease-out;
+
+                @include mobileSize {
+                    right: 0;
+                }
             }
 
             &.active::after {
