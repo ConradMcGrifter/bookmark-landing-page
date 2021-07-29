@@ -1158,6 +1158,7 @@ img {
 .sign-up-section .sign-up-section--wrap .sign-up__h2 {
   margin-top: 1em;
   color: white;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
   max-width: 20ch;
 }
 
@@ -1176,6 +1177,13 @@ img {
           justify-content: center;
   margin-top: 1.5em;
   width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .sign-up-section .sign-up-section--wrap .contact--wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .sign-up-section .sign-up-section--wrap .contact--wrap .input--wrap {
@@ -1210,7 +1218,7 @@ img {
 
 .sign-up-section .sign-up-section--wrap .contact--wrap .input--wrap .contact__input {
   width: 100%;
-  padding: 0.5em 2em 0.5em 1em;
+  padding: 0.75em 2em 0.75em 1em;
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   color: #252b46;
@@ -1243,6 +1251,17 @@ img {
   background: #fa5757;
   color: white;
   border: solid #fa5757 2px;
+}
+
+@media only screen and (max-width: 950px) {
+  .sign-up-section .sign-up-section--wrap .contact--wrap .contact__btn {
+    width: 100%;
+    margin-left: 0;
+    margin: 1em 0;
+  }
+  .sign-up-section .sign-up-section--wrap .contact--wrap .contact__btn.mobile-active {
+    margin: 2em 0 1em 0;
+  }
 }
 
 .sign-up-section .sign-up-section--wrap .contact--wrap .contact__btn:hover {
