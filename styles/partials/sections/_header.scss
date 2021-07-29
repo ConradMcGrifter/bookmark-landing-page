@@ -48,6 +48,7 @@
 
         @include mobileSize {
             position: fixed;
+            z-index: 997;
             background: hsla(229, 31%, 21%, 0.918);
             top: 0;
             left: 0;

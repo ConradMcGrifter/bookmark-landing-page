@@ -4,8 +4,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto auto auto 300px 50px;
-      grid-template-rows: auto auto auto auto auto 300px 50px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 html {
@@ -132,6 +132,7 @@ img {
 @media only screen and (max-width: 950px) {
   .nav__links--wrap {
     position: fixed;
+    z-index: 997;
     background: rgba(37, 43, 70, 0.918);
     top: 0;
     left: 0;
