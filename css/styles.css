@@ -4,8 +4,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto auto 700px 300px 50px;
-      grid-template-rows: auto auto auto auto 700px 300px 50px;
+  -ms-grid-rows: auto auto auto auto auto 300px 50px;
+      grid-template-rows: auto auto auto auto auto 300px 50px;
 }
 
 html {
@@ -986,5 +986,86 @@ img {
   .download-section__card--wrap .opera-container {
     place-items: center;
   }
+}
+
+.faq-section--wrap {
+  outline: solid red 2px;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq-section--wrap .faq-section-header--wrap {
+  text-align: center;
+  max-width: 550px;
+}
+
+.faq-section--wrap .faq-section-header--wrap .faq__p {
+  max-width: 45ch;
+}
+
+.faq-section--wrap .accordion--wrap {
+  margin-top: 2em;
+  max-width: 550px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq-section--wrap .accordion--wrap hr {
+  color: rgba(206, 206, 206, 0.377);
+}
+
+.faq-section--wrap .accordion--wrap .accordion {
+  background: none;
+  padding: 1em 0;
+  text-align: start;
+  border: none;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  position: relative;
+}
+
+.faq-section--wrap .accordion--wrap .accordion:hover {
+  color: #fa5757;
+}
+
+.faq-section--wrap .accordion--wrap .accordion::after {
+  content: url("/images/icon-arrow.svg");
+  position: absolute;
+  right: 0;
+}
+
+.faq-section--wrap .accordion--wrap .accordion.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-section--wrap .accordion--wrap .panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.faq-section--wrap .accordion--wrap .panel__p {
+  margin: 0 0 1em 0;
 }
 /*# sourceMappingURL=styles.css.map */
