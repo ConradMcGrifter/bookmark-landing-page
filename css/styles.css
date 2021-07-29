@@ -995,6 +995,10 @@ img {
   }
 }
 
+.faq-section {
+  min-height: 650px;
+}
+
 .faq-section--wrap {
   padding: 2em;
   display: -webkit-box;
