@@ -1162,11 +1162,25 @@ img {
   margin-top: 1.5em;
 }
 
-.sign-up-section .sign-up-section--wrap .contact--wrap .contact__input {
+.sign-up-section .sign-up-section--wrap .contact--wrap .input--wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  padding: 0 1em;
+}
+
+.sign-up-section .sign-up-section--wrap .contact--wrap .input--wrap .contact__input {
+  width: 100%;
+  padding: 0 2em 0 1em;
   font-family: "Rubik", sans-serif;
   border-radius: 5px;
+}
+
+.sign-up-section .sign-up-section--wrap .contact--wrap .input--wrap .error-img {
+  position: absolute;
+  right: 0.5em;
+  top: 25%;
 }
 
 .sign-up-section .sign-up-section--wrap .contact--wrap .contact__btn {
