@@ -72,20 +72,15 @@
                 font-weight: 500;
                 padding: 1em;
                 cursor: pointer;
-                transition: border 0.25s;
+                transition: border 0.25s, color 0.25s;
                 color: color(neutral-grayish-blue);
 
                 &.active {
-                    color: black;
+                    color: color(neutral-very-dark-blue);
                 }
 
                 &:hover {
                     color: color(primary-red);
-                }
-
-                &:hover {
-                    color: color(primary-red);
-                    transition: color 0.25s;
                 }
 
                 &.active::before {

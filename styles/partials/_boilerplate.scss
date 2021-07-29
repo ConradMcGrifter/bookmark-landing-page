@@ -30,6 +30,12 @@ p {
     font-size: clamp(1.5rem, 3vw, 1.8rem);
 }
 
+h1,
+h2,
+h3 {
+    color: color(neutral-very-dark-blue);
+}
+
 img {
     display: block;
 }
@@ -41,4 +47,5 @@ img {
     font-weight: 500;
     font-size: 1.6rem;
     box-shadow: $box-shadow;
+    text-decoration: none;
 }

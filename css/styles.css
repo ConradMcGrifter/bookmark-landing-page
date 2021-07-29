@@ -41,6 +41,12 @@ p {
   font-size: clamp(1.5rem, 3vw, 1.8rem);
 }
 
+h1,
+h2,
+h3 {
+  color: #252b46;
+}
+
 img {
   display: block;
 }
@@ -52,6 +58,7 @@ img {
   font-size: 1.6rem;
   -webkit-box-shadow: 0 5px 10px rgba(10, 10, 10, 0.116);
           box-shadow: 0 5px 10px rgba(10, 10, 10, 0.116);
+  text-decoration: none;
 }
 
 .header {
@@ -555,23 +562,17 @@ img {
   font-weight: 500;
   padding: 1em;
   cursor: pointer;
-  -webkit-transition: border 0.25s;
-  transition: border 0.25s;
+  -webkit-transition: border 0.25s, color 0.25s;
+  transition: border 0.25s, color 0.25s;
   color: #9194a1;
 }
 
 .tabs--wrap .tabs__ul .tabs__li .tab-links.active {
-  color: black;
+  color: #252b46;
 }
 
 .tabs--wrap .tabs__ul .tabs__li .tab-links:hover {
   color: #fa5757;
-}
-
-.tabs--wrap .tabs__ul .tabs__li .tab-links:hover {
-  color: #fa5757;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
 }
 
 .tabs--wrap .tabs__ul .tabs__li .tab-links.active::before {
@@ -1052,6 +1053,9 @@ img {
   font-family: "Rubik", sans-serif;
   font-size: clamp(1.5rem, 3vw, 1.8rem);
   position: relative;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  color: #252b46;
 }
 
 .faq-section--wrap .accordion--wrap .accordion:hover {
@@ -1106,5 +1110,69 @@ img {
   background: white;
   color: #5368df;
   outline: solid #5368df 2px;
+}
+
+.sign-up-section {
+  background: #5368df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 2em;
+  min-height: 300px;
+}
+
+.sign-up-section .sign-up-section--wrap {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.sign-up-section .sign-up-section--wrap .sign-up__h2 {
+  margin-top: 1em;
+  color: white;
+  font-weight: 400;
+}
+
+.sign-up-section .sign-up-section--wrap .sign-up__p {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.25em;
+}
+
+.sign-up-section .sign-up-section--wrap .contact--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5em;
+}
+
+.sign-up-section .sign-up-section--wrap .contact--wrap .contact__input {
+  width: 100%;
+  padding: 0 1em;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+}
+
+.sign-up-section .sign-up-section--wrap .contact--wrap .contact__btn {
+  white-space: nowrap;
+  margin-left: 1em;
+  background: #fa5757;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,46 @@
+.sign-up-section {
+    background: color(primary-blue);
+    @include flexCenter(column);
+    justify-content: start;
+    padding: $margin;
+    min-height: 300px;
+
+    .sign-up-section--wrap {
+        // outline: solid black 2px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+
+        .sign-up__h2 {
+            margin-top: 1em;
+            color: white;
+            font-weight: 400;
+        }
+
+        .sign-up__p {
+            color: white;
+            font-size: 1.2rem;
+            letter-spacing: 0.25em;
+        }
+
+        .contact--wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5em;
+
+            .contact__input {
+                width: 100%;
+                padding: 0 1em;
+                font-family: "Rubik", sans-serif;
+                border-radius: 5px;
+            }
+
+            .contact__btn {
+                white-space: nowrap;
+                margin-left: 1em;
+                background: color(primary-red);
+                color: white;
+            }
+        }
+    }
+}
