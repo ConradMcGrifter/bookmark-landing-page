@@ -801,6 +801,12 @@ img {
   color: white;
 }
 
+.features--grid .features__info .info--wrap .features__btn:hover {
+  background: white;
+  color: #5368df;
+  outline: solid #5368df 2px;
+}
+
 @media only screen and (max-width: 950px) {
   .features--grid .features__info .info--wrap .features__btn {
     margin: 1em auto 0 auto;
@@ -989,7 +995,6 @@ img {
 }
 
 .faq-section--wrap {
-  outline: solid red 2px;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,10 +1055,15 @@ img {
 .faq-section--wrap .accordion--wrap .accordion::after {
   content: url("/images/icon-arrow.svg");
   position: absolute;
-  right: 0;
+  right: 1rem;
+  -webkit-transition: -webkit-transform 0.15s ease-out;
+  transition: -webkit-transform 0.15s ease-out;
+  transition: transform 0.15s ease-out;
+  transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
 }
 
 .faq-section--wrap .accordion--wrap .accordion.active::after {
+  content: url("/images/icon-arrow-active.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -1067,5 +1077,22 @@ img {
 
 .faq-section--wrap .accordion--wrap .panel__p {
   margin: 0 0 1em 0;
+}
+
+.more-info {
+  margin: 3em 0 0 0;
+  text-decoration: none;
+  display: block;
+  background: #5368df;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+}
+
+.more-info:hover {
+  background: white;
+  color: #5368df;
+  outline: solid #5368df 2px;
 }
 /*# sourceMappingURL=styles.css.map */

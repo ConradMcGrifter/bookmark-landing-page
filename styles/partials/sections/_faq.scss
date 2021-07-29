@@ -1,6 +1,6 @@
 .faq-section--wrap {
     // background: rgba(240, 128, 128, 0.432);
-    outline: solid red 2px;
+    // outline: solid red 2px;
     padding: 2em;
     @include flexCenter(column);
 
@@ -43,10 +43,12 @@
             &::after {
                 content: url("/images/icon-arrow.svg");
                 position: absolute;
-                right: 0;
+                right: 1rem;
+                transition: transform 0.15s ease-out;
             }
 
             &.active::after {
+                content: url("/images/icon-arrow-active.svg");
                 transform: rotate(180deg);
             }
         }
@@ -63,5 +65,20 @@
             &.active {
             }
         }
+    }
+}
+
+.more-info {
+    margin: 3em 0 0 0;
+    text-decoration: none;
+    display: block;
+    background: color(primary-blue);
+    width: max-content;
+    color: white;
+
+    &:hover {
+        background: white;
+        color: color(primary-blue);
+        outline: solid color(primary-blue) 2px;
     }
 }
