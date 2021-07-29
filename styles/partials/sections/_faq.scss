@@ -41,14 +41,14 @@
             }
 
             &::after {
-                content: url("/images/icon-arrow.svg");
+                content: url("../images/icon-arrow.svg");
                 position: absolute;
                 right: 1rem;
                 transition: transform 0.15s ease-out;
             }
 
             &.active::after {
-                content: url("/images/icon-arrow-active.svg");
+                content: url("../images/icon-arrow-active.svg");
                 transform: rotate(180deg);
             }
         }

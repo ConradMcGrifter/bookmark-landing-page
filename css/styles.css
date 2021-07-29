@@ -1053,7 +1053,7 @@ img {
 }
 
 .faq-section--wrap .accordion--wrap .accordion::after {
-  content: url("/images/icon-arrow.svg");
+  content: url("../images/icon-arrow.svg");
   position: absolute;
   right: 1rem;
   -webkit-transition: -webkit-transform 0.15s ease-out;
@@ -1063,7 +1063,7 @@ img {
 }
 
 .faq-section--wrap .accordion--wrap .accordion.active::after {
-  content: url("/images/icon-arrow-active.svg");
+  content: url("../images/icon-arrow-active.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
