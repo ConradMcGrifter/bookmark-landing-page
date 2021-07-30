@@ -225,6 +225,8 @@ img {
   color: #252b46;
   font-size: 1.4rem;
   letter-spacing: 0.15em;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .nav__links--wrap .links__ul li a:hover {
