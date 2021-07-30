@@ -34,27 +34,31 @@
     </head>
     <body>
         <div class="website--grid">
-            <header class="header">
+            <header class="header" id="header">
                 <nav class="nav">
                     <img
                         src="images/logo-bookmark.svg"
-                        alt=""
+                        alt="logo"
                         class="nav__img"
                     />
                     <img
                         src="images/logo-bookmark white.svg"
-                        alt=""
+                        alt="logo"
                         class="nav__img--white"
                     />
 
                     <button id="nav__hamburger">
                         <img
                             src="images/icon-hamburger.svg"
-                            alt=""
+                            alt="navigation menu button"
                             class="hamburger-img"
                         />
 
-                        <img src="images/icon-close.svg" alt="" class="x-img" />
+                        <img
+                            src="images/icon-close.svg"
+                            alt="navigation close button"
+                            class="x-img"
+                        />
                     </button>
                     <div class="nav__links--wrap">
                         <ul class="links__ul">
@@ -69,6 +73,22 @@
                                 <a class="login-btn button" href="">Login</a>
                             </li>
                         </ul>
+                        <div class="nav-social-links--wrap">
+                            <a href="#!">
+                                <i
+                                    class="
+                                        fab
+                                        fa-facebook-square fa-lg
+                                        facebook-icon
+                                    "
+                                ></i>
+                            </a>
+                            <a href="#!">
+                                <i
+                                    class="fab fa-twitter fa-lg twitter-icon"
+                                ></i>
+                            </a>
+                        </div>
                     </div>
                 </nav>
             </header>
@@ -106,7 +126,7 @@
                         <div class="hero-image--wrap">
                             <img
                                 src="images/illustration-hero.svg"
-                                alt=""
+                                alt="image of the application interface"
                                 class="hero-img"
                             />
                             <div class="hero-bg"></div>
@@ -166,21 +186,21 @@
                             <div class="features__images">
                                 <img
                                     src="images/illustration-features-tab-1.svg"
-                                    alt=""
+                                    alt="feature image 1"
                                     class="feature-img simple active"
                                     id="simple-img"
                                 />
 
                                 <img
                                     src="images/illustration-features-tab-2.svg"
-                                    alt=""
+                                    alt="feature image 2"
                                     class="feature-img"
                                     id="speedy-img"
                                 />
 
                                 <img
                                     src="images/illustration-features-tab-3.svg"
-                                    alt=""
+                                    alt="feature image 3"
                                     class="feature-img"
                                     id="easy-img"
                                 />
@@ -262,7 +282,7 @@
                                 <div class="card">
                                     <img
                                         src="images/logo-chrome.svg"
-                                        alt=""
+                                        alt="google chrome logo"
                                         class="card__img"
                                     />
                                     <div class="card__info--wrap">
@@ -273,7 +293,7 @@
                                     </div>
                                     <img
                                         src="images/bg-dots.svg"
-                                        alt=""
+                                        alt="dots"
                                         class="card__bg"
                                     />
                                     <a href="" class="card__button button"
@@ -287,7 +307,7 @@
                                 <div class="card margin">
                                     <img
                                         src="images/logo-firefox.svg"
-                                        alt=""
+                                        alt="firefox logo"
                                         class="card__img"
                                     />
                                     <div class="card__info--wrap">
@@ -298,7 +318,7 @@
                                     </div>
                                     <img
                                         src="images/bg-dots.svg"
-                                        alt=""
+                                        alt="dots"
                                         class="card__bg"
                                     />
                                     <a href="" class="card__button button"
@@ -311,7 +331,7 @@
                                 <div class="card">
                                     <img
                                         src="images/logo-opera.svg"
-                                        alt=""
+                                        alt="opera browser logo"
                                         class="card__img"
                                     />
                                     <div class="card__info--wrap">
@@ -322,7 +342,7 @@
                                     </div>
                                     <img
                                         src="images/bg-dots.svg"
-                                        alt=""
+                                        alt="dots"
                                         class="card__bg"
                                     />
                                     <a href="" class="card__button button"
@@ -439,7 +459,7 @@
                                 />
                                 <img
                                     src="images/icon-error.svg"
-                                    alt=""
+                                    alt="error icon"
                                     class="error-img"
                                 />
                             </div>
@@ -453,11 +473,13 @@
             <footer class="footer">
                 <div class="footer--wrap">
                     <div class="logo-and-links--wrap">
-                        <img
-                            src="images/logo-bookmark white.svg"
-                            alt="bookmark logo"
-                            class="footer__logo"
-                        />
+                        <a href="#header">
+                            <img
+                                src="images/logo-bookmark white.svg"
+                                alt="bookmark logo"
+                                class="footer__logo"
+                            />
+                        </a>
                         <ul class="footer__ul">
                             <li class="footer__li">
                                 <a href="#!" class="footer__links">FEATURES</a>

@@ -82,6 +82,10 @@
                 max-width: 650px;
                 // margin-left: 1.5em;
                 // margin-right: 1em;
+
+                @include mobileSize {
+                    padding: 0 0.7em;
+                }
             }
 
             .hero-bg {

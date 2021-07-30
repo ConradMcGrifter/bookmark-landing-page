@@ -1,5 +1,12 @@
 .header {
+    background: white;
     @include flexCenter();
+
+    @include mobileSize {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
 }
 
 .nav {
@@ -14,6 +21,7 @@
 
     @include mobileSize {
         flex-wrap: wrap;
+        margin: 1em $margin;
     }
 
     .nav__img {
@@ -83,8 +91,6 @@
 
                 flex-direction: column;
                 margin-top: 5.2em;
-                margin-left: $margin;
-                margin-right: $margin;
             }
 
             li {
@@ -151,10 +157,25 @@
                 }
             }
         }
-    }
 
+        .nav-social-links--wrap {
+            text-align: center;
+            a {
+                color: white;
+
+                & + a {
+                    margin-left: 2em;
+                }
+            }
+            // display: none;
+        }
+    }
     &__links--wrap.active {
         visibility: visible;
         opacity: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 $margin $margin $margin;
     }
 }
