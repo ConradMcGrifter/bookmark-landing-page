@@ -56,7 +56,6 @@ button {
 
 // login button in the navbar
 .login-btn {
-    // display: block;
     padding: 0.5em 1.75em;
     letter-spacing: 0.15rem;
 
@@ -89,7 +88,6 @@ button {
 // buttons for the feature tabs section
 .features__btn {
     margin: 1em 0 0 0;
-    // display: block;
     width: max-content;
 
     @include mobileSize {
