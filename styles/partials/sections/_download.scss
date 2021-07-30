@@ -79,22 +79,22 @@
                     }
                 }
 
-                &__button {
-                    margin-top: 1em;
-                    text-decoration: none;
-                    background: color(primary-blue);
-                    color: white;
-                    margin-top: 4em;
-                    width: 100%;
-                    text-align: center;
+                // &__button {
+                //     margin-top: 1em;
+                //     text-decoration: none;
+                //     background: color(primary-blue);
+                //     color: white;
+                //     margin-top: 4em;
+                //     width: 100%;
+                //     text-align: center;
 
-                    &:hover {
-                        background: white;
-                        color: color(primary-blue);
-                        outline: solid color(primary-blue) 0.15em;
-                        box-shadow: none;
-                    }
-                }
+                //     &:hover {
+                //         background: white;
+                //         color: color(primary-blue);
+                //         outline: solid color(primary-blue) 0.15em;
+                //         box-shadow: none;
+                //     }
+                // }
 
                 &__bg {
                     width: 100%;

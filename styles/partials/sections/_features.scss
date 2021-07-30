@@ -268,25 +268,6 @@
             .info__h2 {
                 font-size: clamp(2.4rem, 5vw, 3.2rem);
             }
-
-            .features__btn {
-                margin: 1em 0 0 0;
-                text-decoration: none;
-                display: block;
-                background: color(primary-blue);
-                width: max-content;
-                color: white;
-
-                &:hover {
-                    background: white;
-                    color: color(primary-blue);
-                    outline: solid color(primary-blue) 2px;
-                }
-
-                @include mobileSize {
-                    margin: 1em auto 0 auto;
-                }
-            }
         }
     }
 }

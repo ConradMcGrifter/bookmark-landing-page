@@ -81,18 +81,3 @@
         }
     }
 }
-
-.more-info {
-    margin: 3em 0 0 0;
-    text-decoration: none;
-    display: block;
-    background: color(primary-blue);
-    width: max-content;
-    color: white;
-
-    &:hover {
-        background: white;
-        color: color(primary-blue);
-        outline: solid color(primary-blue) 2px;
-    }
-}
