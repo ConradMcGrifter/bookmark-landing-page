@@ -2,8 +2,12 @@
     background: color(primary-blue);
     @include flexCenter(column);
     justify-content: start;
-    padding: $margin;
+    padding: 2em 2em 3em 2em;
     min-height: 300px;
+
+    @include mobileSize {
+        padding: 2em;
+    }
 
     .sign-up-section--wrap {
         // outline: solid black 2px;

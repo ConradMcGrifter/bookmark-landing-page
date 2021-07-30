@@ -19,6 +19,19 @@
     .nav__img {
         position: relative;
         z-index: 998;
+
+        &.display {
+            display: none;
+        }
+    }
+
+    .nav__img--white {
+        display: none;
+        z-index: 999;
+
+        &.display {
+            display: block;
+        }
     }
 
     #nav__hamburger {

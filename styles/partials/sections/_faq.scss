@@ -1,5 +1,9 @@
 .faq-section {
     min-height: 650px;
+
+    @include mobileSize {
+        min-height: 600px;
+    }
 }
 
 .faq-section--wrap {
