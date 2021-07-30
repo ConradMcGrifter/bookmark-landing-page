@@ -1232,6 +1232,7 @@ img {
 .sign-up-section .sign-up-section--wrap .sign-up__h2 {
   margin-top: 1em;
   color: white;
+  font-weight: 400;
   font-size: clamp(2.4rem, 5vw, 3.2rem);
   max-width: 20ch;
 }
