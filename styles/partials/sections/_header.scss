@@ -161,6 +161,7 @@
 
         .nav-social-links--wrap {
             text-align: center;
+            display: none;
             a {
                 color: white;
 
@@ -168,7 +169,10 @@
                     margin-left: 2em;
                 }
             }
-            // display: none;
+
+            &.display {
+                display: block;
+            }
         }
     }
     &__links--wrap.active {

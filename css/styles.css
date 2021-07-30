@@ -291,6 +291,7 @@ img {
 
 .nav__links--wrap .nav-social-links--wrap {
   text-align: center;
+  display: none;
 }
 
 .nav__links--wrap .nav-social-links--wrap a {
@@ -299,6 +300,10 @@ img {
 
 .nav__links--wrap .nav-social-links--wrap a + a {
   margin-left: 2em;
+}
+
+.nav__links--wrap .nav-social-links--wrap.display {
+  display: block;
 }
 
 .nav__links--wrap.active {
