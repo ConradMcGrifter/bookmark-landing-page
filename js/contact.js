@@ -3,10 +3,14 @@ let icon = document.querySelector(".error-img");
 let inputWrap = document.querySelector(".input--wrap");
 let contactBtn = document.querySelector(".contact__btn");
 
+let passwordRegex = /^\S+@\S+$/;
+
 input.value = "";
 
-document.querySelector(".contact__btn").addEventListener("click", function () {
-    if (input.value == "" || !input.value.includes("@")) {
+contactBtn.addEventListener("click", function () {
+    let result = passwordRegex.test(input.value);
+
+    if (!result) {
         inputWrap.classList.add("error");
         input.classList.add("error");
         icon.classList.add("active");
