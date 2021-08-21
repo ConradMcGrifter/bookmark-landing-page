@@ -308,7 +308,7 @@ img {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
-        grid-template-areas: "img" "info";
+        grid-template-areas: "img" "info";
   }
 }
 
@@ -495,7 +495,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  max-width: 700px;
+  max-width: 70rem;
   width: 100%;
   display: flex;
   -webkit-box-align: center;
@@ -821,7 +821,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 475px;
+  height: 47.5rem;
   margin-top: 3em;
   padding: 2em;
 }
@@ -924,7 +924,7 @@ img {
 }
 
 .faq-section {
-  min-height: 655px;
+  min-height: 65.5rem;
 }
 
 @media only screen and (max-width: 950px) {
@@ -1117,7 +1117,7 @@ img {
   content: "Whoops, make sure it's an email";
   position: absolute;
   z-index: -1;
-  bottom: -45%;
+  bottom: -2rem;
   width: 100%;
   height: 2.5rem;
   background: #fa5757;
